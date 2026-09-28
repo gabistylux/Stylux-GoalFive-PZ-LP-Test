@@ -428,7 +428,7 @@ PRODUCTS.forEach(p => {
       <div class="meta">${p.method} · ${p.place}</div>
       <div class="sw">${p.colors.map((c, i) => `<button class="${i ? '' : 'on'}" style="background:${c.sw}" title="${c.c}" aria-label="${c.c}" data-i="${i}"></button>`).join('')}<span class="cname">${c0.c}</span></div>
       <div class="spacer"></div>
-      <a class="btn" href="${url(p.h, c0.vid)}">Personalize it</a>
+      <a class="btn" href="${url(p.h, c0.vid)}">View product</a>
     </div>`;
   const main = el.querySelector('img.main'), links = el.querySelectorAll('a.ph, a.btn'), cname = el.querySelector('.cname');
   el.querySelectorAll('.sw button').forEach(b => b.addEventListener('click', () => {
